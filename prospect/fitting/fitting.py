@@ -72,7 +72,7 @@ def lnprobfn(theta, model=None, observations=None, sps=None,
     """
     if residuals:
         ndof = np.sum([obs["ndof"] for obs in observations])
-        lnnull = np.zeros(ndof) - 1e18  # -np.infty
+        lnnull = np.zeros(ndof) - 1e18  # 
     else:
         lnnull = -np.inf
 
